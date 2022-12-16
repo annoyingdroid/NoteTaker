@@ -2,7 +2,7 @@ const noteDb = require('../db/db.json');
 const {writeFileSync} = require('fs');
 
 function createNote(body, id){
-    body.id = id;
+    body.id = noteDb.length + 1;
     noteDb.push(body);
     writeFileSync('./db/db.json', JSON.stringify(noteDb));
     return body;
@@ -16,7 +16,7 @@ function deleteNote(id){
 }
 
 function loadNotes(){
-    return noteDb;
+    return noteDb.slice(1);
 }
 
 module.exports = {createNote, deleteNote, loadNotes};

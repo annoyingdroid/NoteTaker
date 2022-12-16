@@ -4,7 +4,7 @@ const apiRoutes = require('./api');
 const notesRoute = require('../public/notes');
 
 router.use('/', htmlRoutes);
-router.use('/notes', notesRoute);
+router.use('/notes', notesRoutes);
 router.use('/api', apiRoutes);
 
 router.use((req, res) => {
