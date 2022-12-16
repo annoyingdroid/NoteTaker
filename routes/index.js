@@ -1,8 +1,10 @@
 const router = require('express').Router();
 const htmlRoutes = require('./');
 const apiRoutes = require('./api');
+const notesRoute = require('../public/notes');
 
 router.use('/', htmlRoutes);
+router.use('/notes', notesRoute);
 router.use('/api', apiRoutes);
 
 router.use((req, res) => {
