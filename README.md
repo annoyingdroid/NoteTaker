@@ -1,5 +1,7 @@
 # NoteTaker
 
+![A screenshot of the notetaker application](https://github.com/annoyingdroid/NoteTaker/raw/main/Notetaker.png)
+
 ## Description
 A web based note application that allows a user to write and save notes
 
